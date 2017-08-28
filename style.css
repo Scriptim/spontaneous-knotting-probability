@@ -32,3 +32,19 @@ h2 {
 #output {
   font-size: 2em;
 }
+
+#info {
+  margin-top: 4em;
+}
+
+#info a {
+  padding: 0.1em;
+  color: #5A5A5A;
+  text-decoration: underline;
+  line-height: 1.6;
+}
+
+#info a:hover,
+#info a:focus {
+  font-weight: bold;
+}
