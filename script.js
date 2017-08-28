@@ -8,5 +8,5 @@ function probability(l) {
 }
 
 document.getElementById('input').addEventListener('change', function () {
-  document.getElementById('output').innerHTML = (probability(this.value) * 100) + " %"
+  document.getElementById('output').innerHTML = Math.round(probability(this.value) * 100000) / 1000 + " %"
 })
