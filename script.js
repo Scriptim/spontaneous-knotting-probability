@@ -6,3 +6,7 @@ function probability(l) {
   l *= 25 / 64 // cm -> inch
   return n0 / (1 + Math.pow(l / l0, b))
 }
+
+document.getElementById('input').addEventListener('change', function () {
+  document.getElementById('output').innerHTML = (probability(this.value) * 100) + " %"
+})
